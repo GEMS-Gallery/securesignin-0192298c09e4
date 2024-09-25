@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Welcome Back</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegister">Sign up</a></p>
+        </div>
+        <div class="form-container hidden" id="registerContainer">
+            <h1>Create Account</h1>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Log in</a></p>
+        </div>
+    </div>
+    <div id="message" class="message"></div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

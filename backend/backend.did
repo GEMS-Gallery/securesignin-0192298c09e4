@@ -1,0 +1,9 @@
+type Result = 
+ variant {
+   err: text;
+   ok: text;
+ };
+service : {
+  login: (text, text) -> (Result) query;
+  register: (text, text) -> (Result);
+}
